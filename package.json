@@ -1,0 +1,28 @@
+{
+    "name": "support-ukraine-banner",
+	"type": "module",
+    "version": "1.0.0",
+    "description": "Simple header banner with link to support Ukraine against Russian invasion",
+    "main": "index.js",
+    "directories": {
+        "example": "example"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/expofp/support-ukraine-banner.git"
+    },
+    "keywords": [
+        "ukraine",
+        "support",
+        "banner"
+    ],
+    "author": "Pranas.NET",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/expofp/support-ukraine-banner/issues"
+    },
+    "homepage": "https://github.com/expofp/support-ukraine-banner#readme"
+}

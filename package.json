@@ -3,7 +3,7 @@
     "author": "Pranas.NET",
     "license": "MIT",
     "type": "module",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Simple header banner with link to support Ukraine against Russian invasion",
     "main": "dist/index.js",
     "module": "dist/index.mjs",

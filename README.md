@@ -1,4 +1,4 @@
-# support-ukraine-banner
+# support-ukraine-topbar
 
 ### Styling
 

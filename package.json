@@ -1,28 +1,32 @@
 {
-    "name": "support-ukraine-banner",
-	"type": "module",
-    "version": "1.0.0",
+    "name": "support-ukraine-topbar",
+    "author": "Pranas.NET",
+    "license": "MIT",
+    "type": "module",
+    "version": "0.0.1",
     "description": "Simple header banner with link to support Ukraine against Russian invasion",
-    "main": "index.js",
-    "directories": {
-        "example": "example"
-    },
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "tsup index.ts --format cjs,esm --dts",
+        "lint": "tsc"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/expofp/support-ukraine-banner.git"
+        "url": "git+https://github.com/expofp/support-ukraine-topbar.git"
     },
     "keywords": [
         "ukraine",
         "support",
         "banner"
     ],
-    "author": "Pranas.NET",
-    "license": "MIT",
     "bugs": {
-        "url": "https://github.com/expofp/support-ukraine-banner/issues"
+        "url": "https://github.com/expofp/support-ukraine-topbar/issues"
     },
-    "homepage": "https://github.com/expofp/support-ukraine-banner#readme"
+    "homepage": "https://github.com/expofp/support-ukraine-topbar#readme",
+    "devDependencies": {
+        "tsup": "^6.7.0",
+        "typescript": "^5.0.3"
+    }
 }

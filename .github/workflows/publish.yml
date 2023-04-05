@@ -24,10 +24,10 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - name: Create Release Pull Request or Publish
         id: changesets
-          uses: changesets/action@v1
-          with:
-            version: pnpm run version
-            publish: pnpm run publish
+        uses: changesets/action@v1
+        with:
+          version: pnpm run version
+          publish: pnpm run publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

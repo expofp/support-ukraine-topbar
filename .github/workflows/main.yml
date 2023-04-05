@@ -1,4 +1,4 @@
-name: Support Ukraine topbar build
+name: Build
 
 on:
   pull_request:

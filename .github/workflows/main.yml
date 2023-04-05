@@ -18,7 +18,5 @@ jobs:
         with:
           node-verstion: 16.x
           cache: "pnpm"
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: pnpm install --frozen-lockfile
       - run: pnpm run lint && pnpm run build
-      - run: echo "🍏 This job's status is ${{ job.status }}."

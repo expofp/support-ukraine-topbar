@@ -11,8 +11,7 @@
     "scripts": {
         "build": "tsup index.ts --format cjs,esm --dts",
         "lint": "tsc",
-        "version": "changeset version && pnpm install --no-frozen-lockfile",
-        "release": "changeset publish"
+        "release": "pnpm run build && changeset publish"
     },
     "repository": {
         "type": "git",

@@ -1,32 +1,36 @@
 name: Publish
 
 on:
-  pull_request:
+  workflow_run:
+    workflows: ["CI"]
+    types:
+      - completed
   push:
     branches:
-      - main
+      - "main"
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  build:
+  publish:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
-        with: 
+        with:
           version: 7
       - uses: actions/setup-node@v3
         with:
-          node-verstion: 16.x
+          node-version: 16.x
           cache: "pnpm"
+
       - run: pnpm install --frozen-lockfile
+      
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
         with:
-          version: pnpm run version
           publish: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

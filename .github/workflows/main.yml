@@ -1,11 +1,9 @@
-name: CI
-
+name: Support Ukraine topbar build
 on:
-	pull_request:
-	push:
-		branches:
-			- main
-
+  pull_request:
+  push:
+    branches:
+      - main
 jobs:
 	build:
 		runs-on: ubuntu-latest

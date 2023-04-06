@@ -1,4 +1,4 @@
-class SupportBanner extends HTMLElement {
+export default class SupportUkraineTopbar extends HTMLElement {
     constructor() {
         super();
 
@@ -46,4 +46,4 @@ template.innerHTML = `
     </div>
 `;
 
-customElements.define("support-ukraine", SupportBanner);
+customElements.define("support-ukraine-topbar", SupportUkraineTopbar);

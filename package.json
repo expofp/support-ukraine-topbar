@@ -3,7 +3,7 @@
     "author": "Pranas.NET",
     "license": "MIT",
     "type": "module",
-    "version": "2.0.1",
+    "version": "1.0.0",
     "description": "Simple header banner with link to support Ukraine against Russian invasion",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
@@ -26,9 +26,6 @@
         "url": "https://github.com/expofp/support-ukraine-topbar/issues"
     },
     "homepage": "https://github.com/expofp/support-ukraine-topbar#readme",
-    "publishConfig": {
-        "registry": "https://registry.npmjs.org/"
-    },
     "devDependencies": {
         "@changesets/cli": "^2.26.1",
         "tsup": "^6.7.0",

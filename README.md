@@ -6,7 +6,7 @@ Simple header banner with link to support Ukraine against Russian invasion.
 ### CDN
 Add this script tag to your website:
 
-    <script src="https://unpkg.com/support-ukraine-topbar" defer></script>
+    <script src="https://unpkg.com/support-ukraine-topbar" type="module" defer></script>
     
 Insert into the body:
 
@@ -14,7 +14,7 @@ Insert into the body:
 ### NextJS
 Add to Head of your _document.tsx:
 
-    <script src="https://unpkg.com/support-ukraine-topbar" defer></script>
+    <script src="https://unpkg.com/support-ukraine-topbar" type="module" defer></script>
 
 Then add after body tag: 
 

@@ -1,5 +1,6 @@
 
 # support-ukraine-topbar
+Simple header banner with link to support Ukraine against Russian invasion.
 
 ## 📖 Usage
 ### CDN
@@ -10,20 +11,14 @@ Add this script tag to your website:
 Insert into the body:
 
     <support-ukraine-topbar></support-ukraine-topbar>
-### React / NextJS
-The easiest way to use support-ukraine-topbar is to install it from npm:
+### NextJS
+Add to Head of your _document.tsx:
 
-    yarn add support-ukraine-topbar
+    <script src="https://unpkg.com/support-ukraine-topbar" defer></script>
 
-Then use it in your app:
+Then add after body tag: 
 
-    import SupportUkraineTopbar from "support-ukraine-topbar";
-    
-    export default () => (
-      <>
-        <SupportUkraineTopbar />
-      </>
-    );
+    <support-ukraine></support-ukraine>
 
 ## 🌈 Options
 ### Styling

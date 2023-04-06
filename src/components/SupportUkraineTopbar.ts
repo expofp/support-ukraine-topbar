@@ -1,4 +1,12 @@
-export default class SupportUkraineTopbar extends HTMLElement {
+declare global {
+    namespace JSX {
+        interface IntrinsicElements {
+            "support-ukraine": any;
+        }
+    }
+}
+
+class SupportUkraineTopbar extends HTMLElement {
     constructor() {
         super();
 
@@ -47,3 +55,5 @@ template.innerHTML = `
 `;
 
 customElements.define("support-ukraine-topbar", SupportUkraineTopbar);
+
+export default SupportUkraineTopbar;

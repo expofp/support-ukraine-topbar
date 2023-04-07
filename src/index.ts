@@ -1,11 +1,3 @@
-declare global {
-    namespace JSX {
-        interface IntrinsicElements {
-            "support-ukraine": any;
-        }
-    }
-}
-
 class SupportUkraineTopbar extends HTMLElement {
     constructor() {
         super();

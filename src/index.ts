@@ -38,7 +38,7 @@ template.innerHTML = `
     </style>
     <div class="support-ukraine">
         <div class="support-ukraine__text">
-            We stand with Ukriane.
+            We stand with Ukraine.
             <a href="https://war.ukraine.ua/support-ukraine/" target="_blank" rel="noreferrer"
                 >Here's how you can too.</a
             >

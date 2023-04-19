@@ -8,6 +8,7 @@ export default defineConfig({
             entry: resolve(__dirname, "src/index.ts"),
             name: "support-ukraine-topbar",
             fileName: "index",
+            formats: ["es", "cjs"],
         },
         minify: "terser",
         terserOptions: {
